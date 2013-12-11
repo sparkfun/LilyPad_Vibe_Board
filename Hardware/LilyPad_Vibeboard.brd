@@ -85,6 +85,7 @@
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
@@ -220,6 +221,8 @@
 <vertex x="-0.4566" y="-9.7344"/>
 <vertex x="0" y="-9.851"/>
 </polygon>
+<text x="-68.58" y="0" size="1.778" layer="51" font="vector" ratio="10">Pete Lewis</text>
+<text x="-87.63" y="-2.54" size="1.778" layer="51" font="vector" ratio="10">Revised by: Patrick Alberts</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -410,6 +413,57 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="CREATIVE_COMMONS">
+<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
+</package>
+<package name="OSHW-LOGO-S">
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -419,7 +473,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="SparkFun">
+<designrules name="SparkFun *">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -444,8 +498,8 @@ design rules under a new name.</description>
 <param name="mdCopperDimension" value="8mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="8mil"/>
-<param name="msDrill" value="20mil"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -489,7 +543,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
@@ -577,39 +631,53 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-08416" x="5.466" y="-2.833" size="1.778" layer="27" rot="R60" display="off"/>
 <attribute name="VALUE" value="33k" x="5.466" y="-2.833" size="1.778" layer="27" rot="R60" display="off"/>
 </element>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-98.88105625" y="0"/>
+<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="0" y="3.81" rot="MR0"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="M1" pad="P$1"/>
 <contactref element="D1" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="4.191" y1="-6.35" x2="1.4481" y2="-3.6071" width="0.4064" layer="1"/>
-<wire x1="1.4481" y1="-3.6071" x2="-4.393825" y2="-3.607171875" width="0.4064" layer="1"/>
 <wire x1="4.191" y1="-6.35" x2="4.191" y2="-4.41911875" width="0.4064" layer="1"/>
 <wire x1="4.191" y1="-4.41911875" x2="5.041" y2="-3.56911875" width="0.4064" layer="1"/>
+<wire x1="4.191" y1="-6.35" x2="4.191" y2="-5.461" width="0.4064" layer="1"/>
+<wire x1="4.191" y1="-5.461" x2="2.54" y2="-3.81" width="0.4064" layer="1"/>
+<wire x1="2.54" y1="-3.81" x2="-2.667" y2="-3.81" width="0.4064" layer="1"/>
+<wire x1="-2.667" y1="-3.81" x2="-3.175" y2="-4.318" width="0.4064" layer="1"/>
+<wire x1="-3.175" y1="-4.318" x2="-3.682996875" y2="-4.318" width="0.4064" layer="1"/>
+<wire x1="-3.682996875" y1="-4.318" x2="-4.393825" y2="-3.607171875" width="0.4064" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="VIBE+" pad="1"/>
 <contactref element="R1" pad="2"/>
 <wire x1="5.891" y1="-2.096878125" x2="5.891" y2="-1.729" width="0.4064" layer="1"/>
-<wire x1="6.223" y1="-1.397" x2="6.223" y2="-1.016" width="0.4064" layer="1"/>
-<wire x1="6.223" y1="-1.016" x2="5.08" y2="0.127" width="0.4064" layer="1"/>
-<wire x1="5.08" y1="0.127" x2="5.08" y2="2.45" width="0.4064" layer="1"/>
-<wire x1="5.08" y1="2.45" x2="6.5" y2="3.87" width="0.4064" layer="1"/>
-<wire x1="6.223" y1="-1.397" x2="5.891" y2="-2.096878125" width="0.4064" layer="1"/>
+<wire x1="5.891" y1="-1.729" x2="6.223" y2="-1.397" width="0.4064" layer="1"/>
+<wire x1="6.223" y1="-1.397" x2="6.223" y2="-1.143" width="0.4064" layer="1"/>
+<wire x1="6.223" y1="-1.143" x2="5.715" y2="-0.635" width="0.4064" layer="1"/>
+<wire x1="5.715" y1="-0.635" x2="4.572" y2="-0.635" width="0.4064" layer="1"/>
+<wire x1="4.572" y1="-0.635" x2="4.318" y2="-0.381" width="0.4064" layer="1"/>
+<wire x1="4.318" y1="-0.381" x2="4.318" y2="2.032" width="0.4064" layer="1"/>
+<wire x1="4.318" y1="2.032" x2="5.842" y2="3.556" width="0.4064" layer="1"/>
+<wire x1="5.842" y1="3.556" x2="6.096" y2="3.556" width="0.4064" layer="1"/>
+<wire x1="6.096" y1="3.556" x2="6.5" y2="3.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="M1" pad="P$2"/>
 <contactref element="D1" pad="2"/>
 <contactref element="VIBE-" pad="1"/>
-<wire x1="-6.0201" y1="-4.5209" x2="-4.191" y2="-6.35" width="0.4064" layer="1"/>
-<wire x1="-6.020171875" y1="-1.980825" x2="-6.0201" y2="-4.5209" width="0.4064" layer="1"/>
-<wire x1="-6.020171875" y1="-1.980825" x2="-6.020175" y2="-1.980825" width="0.4064" layer="1"/>
-<wire x1="-6.020175" y1="-1.980825" x2="-6.35" y2="-1.651" width="0.4064" layer="1"/>
-<wire x1="-6.35" y1="-1.651" x2="-6.35" y2="-1.27" width="0.4064" layer="1"/>
-<wire x1="-6.35" y1="-1.27" x2="-5.207" y2="-0.127" width="0.4064" layer="1"/>
-<wire x1="-5.207" y1="-0.127" x2="-5.207" y2="2.457" width="0.4064" layer="1"/>
-<wire x1="-5.207" y1="2.457" x2="-6.5" y2="3.75" width="0.4064" layer="1"/>
+<wire x1="-6.020171875" y1="-1.980825" x2="-6.020171875" y2="-1.853828125" width="0.4064" layer="1"/>
+<wire x1="-6.020171875" y1="-1.853828125" x2="-6.35" y2="-1.524" width="0.4064" layer="1"/>
+<wire x1="-6.35" y1="-1.524" x2="-6.35" y2="-1.27" width="0.4064" layer="1"/>
+<wire x1="-6.35" y1="-1.27" x2="-5.715" y2="-0.635" width="0.4064" layer="1"/>
+<wire x1="-5.715" y1="-0.635" x2="-5.207" y2="-0.635" width="0.4064" layer="1"/>
+<wire x1="-5.207" y1="-0.635" x2="-4.826" y2="-0.254" width="0.4064" layer="1"/>
+<wire x1="-4.826" y1="-0.254" x2="-4.826" y2="2.076" width="0.4064" layer="1"/>
+<wire x1="-4.826" y1="2.076" x2="-6.5" y2="3.75" width="0.4064" layer="1"/>
+<wire x1="-4.191" y1="-6.35" x2="-4.191" y2="-5.969" width="0.4064" layer="1"/>
+<wire x1="-4.191" y1="-5.969" x2="-6.35" y2="-3.81" width="0.4064" layer="1"/>
+<wire x1="-6.35" y1="-3.81" x2="-6.35" y2="-2.310653125" width="0.4064" layer="1"/>
+<wire x1="-6.35" y1="-2.310653125" x2="-6.020171875" y2="-1.980825" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
