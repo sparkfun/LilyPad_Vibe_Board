@@ -4923,8 +4923,9 @@ Standard 8.5x11 US Letter frame</description>
 <sheets>
 <sheet>
 <plain>
-<text x="171.45" y="11.684" size="2.54" layer="94" font="vector">Pete Lewis</text>
 <text x="148.59" y="7.112" size="2.54" layer="94" font="vector">Revised by: Patrick Alberts</text>
+<text x="171.196" y="11.43" size="2.54" layer="94" font="vector">Leah Buechley</text>
+<text x="238.76" y="7.62" size="1.778" layer="94">V11</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
