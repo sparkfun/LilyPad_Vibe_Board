@@ -45,7 +45,7 @@ void setup() {
     //Serial.print("LilyPad Vibe Motor Intensity = ");
     //Serial.println(fadeValue);
     
-    // wait for 100 milliseconds to see motor
+    // wait for 100 milliseconds to observe motor
     delay(100);
   }
   // fade out from max to min in increments of 5 points:
@@ -55,7 +55,7 @@ void setup() {
     //Serial.print("LilyPad Vibe Motor Intensity = ");
     //Serial.println(fadeValue);
     
-    // wait for 100 milliseconds to see motor
+    // wait for 100 milliseconds to observe motor
     delay(100);
   }
 
