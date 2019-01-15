@@ -5,7 +5,7 @@ Lilypad Vibe Board
 
 [*SparkFun LilyPad Vibe Board (DEV-11008)*](https://www.sparkfun.com/products/11008)
 
-Apply 5V and be shaken by this small, but powerful vibration motor. 
+Apply 5V and be shaken by this small, but powerful vibration motor. Works great as an physical indicator without notifying anyone but the wearer. This version uses a surface mount motor which is less likely to be damaged during use. When using with a 3.3V LilyPad Arduino, make sure to use a [transistor](https://www.sparkfun.com/products/11214) in order to source enough current.
 
 Repository Contents
 -------------------
