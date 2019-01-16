@@ -1,4 +1,4 @@
-Lilypad Vibe Board
+LilyPad Vibe Board
 =================
 
 ![SparkFun LilyPad Vibe Board](https://cdn.sparkfun.com//assets/parts/6/2/8/2/11008-01a.jpg)
