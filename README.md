@@ -18,6 +18,8 @@ Documentation
 --------------
 
 * **[LilyPad Development Board Activity Guide: Thermal Alert Project](https://learn.sparkfun.com/tutorials/lilypad-development-board-activity-guide/11-thermal-alert-project)** - Example code using LilyPad Temperature Sensor to trigger the LilyPad Vibe Board when a certain temperature is reached. 
+* **[LilyPad Vibe Board Hookup Guide](https://learn.sparkfun.com/tutorials/lilypad-vibe-board-hookup-guide)** - The LilyPad Vibe Board is a small vibration motor that can be sewn into projects with conductive thread and controlled by a LilyPad Arduino. The board can be used as a physical indicator on clothing and costumes for haptic feedback.
+
 
 License Information
 -------------------
